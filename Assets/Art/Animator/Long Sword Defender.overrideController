@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Long Sword Defender
+  m_Controller: {fileID: 9100000, guid: 97774ed44bd81354a997bda0174c29b3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 9d0b5bd42c1a0464587cf52c06cf11b3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 11131e29644493645ad959607b21a40b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d50d68d65abca0744bb6488771d890f8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d50d68d65abca0744bb6488771d890f8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: efb5ea9e9a711544c86f614ea6072a80, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f084f69759bf2bb4985ecaea8544a2c4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1a16695a3d0bcc34fac53739713d23ae, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1a16695a3d0bcc34fac53739713d23ae, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f231c9a973b79e1408f2dc33625d35fb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f231c9a973b79e1408f2dc33625d35fb, type: 2}

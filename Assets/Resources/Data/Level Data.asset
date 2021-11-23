@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3e5af8ac714f4e85d9df0fc7937355, type: 3}
+  m_Name: Level Data
+  m_EditorClassIdentifier: 
+  LevelData:
+  - EnemyCount: 3
+    ObstaclesList: 00000000
+  - EnemyCount: 5
+    ObstaclesList: 0000000000000000
+  - EnemyCount: 3
+    ObstaclesList: 0000000001000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 4
+    ObstaclesList: 0100000000000000

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Axe Swinger Enemy
+  m_Controller: {fileID: 9100000, guid: 825e759c709e2c245bf903b5be0e66e2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: efb5ea9e9a711544c86f614ea6072a80, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 197dd4edce643cd43bd9c3282ff3c30b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1a16695a3d0bcc34fac53739713d23ae, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1a16695a3d0bcc34fac53739713d23ae, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 36f3cec5b4c1b334d89c32588d19e0fb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 36f3cec5b4c1b334d89c32588d19e0fb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6d9eb73b430084742aed635755376477, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6d9eb73b430084742aed635755376477, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9d0b5bd42c1a0464587cf52c06cf11b3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9d0b5bd42c1a0464587cf52c06cf11b3, type: 2}
