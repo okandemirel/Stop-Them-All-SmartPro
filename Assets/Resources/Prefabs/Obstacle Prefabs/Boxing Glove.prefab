@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 3755788468619600003}
   - component: {fileID: 8007819382286648670}
   - component: {fileID: 6066533217308755793}
+  - component: {fileID: -4018528427591099544}
   m_Layer: 0
   m_Name: Boxing Glove
   m_TagString: Obstacle
@@ -521,3 +522,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
+--- !u!114 &-4018528427591099544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719814569573001240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e32980eb9842968bc72ebe93aad492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenAnimations:
+  - {fileID: 7485866187914342195}
+  - {fileID: 7485866188007140060}
+  ID: 0

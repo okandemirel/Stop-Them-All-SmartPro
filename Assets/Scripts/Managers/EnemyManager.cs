@@ -7,7 +7,6 @@ namespace Managers
 {
     public class EnemyManager : MonoBehaviour
     {
-
         #region Unity Actions
 
         public UnityAction onActivateEnemyMovementAnimation = delegate { };
@@ -16,6 +15,7 @@ namespace Managers
         public UnityAction onDeactivateEnemyMovementRigidbody = delegate { };
 
         public UnityAction onKillEnemy = delegate { };
+        public UnityAction onActivateEnemyDance = delegate { };
 
         #endregion
 
@@ -25,6 +25,8 @@ namespace Managers
 
         [Header("Data")] public EnemyData Data;
 
+        public bool IsKilled;
+
         #endregion
 
         #endregion
@@ -32,6 +34,8 @@ namespace Managers
 
         private void Start()
         {
+            onKillEnemy += OnKillEnemy;
+
             EventManager.Instance.onLevelFailed += LevelFailed;
 
             EventManager.Instance.onActivateEnemyMovement += ActivateEnemyMovement;
@@ -42,6 +46,8 @@ namespace Managers
 
         private void OnDisable()
         {
+            onKillEnemy -= OnKillEnemy;
+
             EventManager.Instance.onLevelFailed -= LevelFailed;
 
 
@@ -54,9 +60,15 @@ namespace Managers
             Data = Resources.Load<EnemyScriptable>("Data/EnemyData").EnemyData;
         }
 
+        private void OnKillEnemy()
+        {
+            IsKilled = true;
+        }
+
         private void LevelFailed()
         {
             DeactivateEnemyMovement();
+            DanceActiveEnemies();
         }
 
         private void ActivateEnemyMovement()
@@ -69,6 +81,11 @@ namespace Managers
         {
             onDeactivateEnemyMovementAnimation?.Invoke();
             onDeactivateEnemyMovementRigidbody?.Invoke();
+        }
+
+        private void DanceActiveEnemies()
+        {
+            onActivateEnemyDance?.Invoke();
         }
     }
 }

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3134915810989712249}
   - component: {fileID: 3173854865477458270}
-  - component: {fileID: 3173854865477458271}
   - component: {fileID: 291543869}
   - component: {fileID: 4555846903780965206}
+  - component: {fileID: 8537339799846737186}
   m_Layer: 0
   m_Name: Trap_Needle
   m_TagString: Obstacle
@@ -201,22 +201,6 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
---- !u!114 &3173854865477458271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2362883467139381699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76bc57fd0d28c44bb8c389411f3cc95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showDebug: 0
-  tweenAnimations:
-  - {fileID: 3173854865477458270}
-  ID: 0
 --- !u!65 &291543869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -243,6 +227,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Needle: {fileID: 6187830294170755544}
+--- !u!114 &8537339799846737186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362883467139381699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e32980eb9842968bc72ebe93aad492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenAnimations:
+  - {fileID: 3173854865477458270}
+  ID: 0
 --- !u!1 &6187830294170755544
 GameObject:
   m_ObjectHideFlags: 0

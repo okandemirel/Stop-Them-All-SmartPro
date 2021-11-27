@@ -23,13 +23,15 @@ MonoBehaviour:
     ObstaclesList: 0100000000000000
   - EnemyCount: 4
     ObstaclesList: 0100000000000000
-  - EnemyCount: 4
+  - EnemyCount: 5
     ObstaclesList: 0100000000000000
-  - EnemyCount: 4
+  - EnemyCount: 5
     ObstaclesList: 0100000000000000
-  - EnemyCount: 4
+  - EnemyCount: 6
     ObstaclesList: 0100000000000000
-  - EnemyCount: 4
+  - EnemyCount: 6
     ObstaclesList: 0100000000000000
-  - EnemyCount: 4
+  - EnemyCount: 8
+    ObstaclesList: 0100000000000000
+  - EnemyCount: 8
     ObstaclesList: 0100000000000000

@@ -18,6 +18,7 @@ namespace Utility
 
         private static readonly int Run = Animator.StringToHash("Run");
         private static readonly int Idle = Animator.StringToHash("Idle");
+        private static readonly int Dance = Animator.StringToHash("Dance");
 
         #endregion
 
@@ -31,6 +32,7 @@ namespace Utility
             enemyManager.onDeactivateEnemyMovementAnimation += OnDeactivateEnemyMovementAnimation;
 
             enemyManager.onKillEnemy += OnKillEnemy;
+            enemyManager.onActivateEnemyDance += OnActivateEnemyDance;
         }
 
         private void OnDisable()
@@ -39,6 +41,7 @@ namespace Utility
             enemyManager.onDeactivateEnemyMovementAnimation -= OnDeactivateEnemyMovementAnimation;
 
             enemyManager.onKillEnemy -= OnKillEnemy;
+            enemyManager.onActivateEnemyDance -= OnActivateEnemyDance;
         }
 
         private void OnActivateEnemyMovementAnimation()
@@ -55,6 +58,11 @@ namespace Utility
         {
             animator.SetTrigger(Idle);
             animator.enabled = false;
+        }
+
+        private void OnActivateEnemyDance()
+        {
+            animator.SetTrigger(Dance);
         }
     }
 }

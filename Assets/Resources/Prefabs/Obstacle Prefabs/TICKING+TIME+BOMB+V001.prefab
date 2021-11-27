@@ -209,12 +209,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2221213873949615744}
-  - component: {fileID: 1556141638993050683}
   - component: {fileID: 1556141638993050687}
   - component: {fileID: 1556141638993050686}
   - component: {fileID: 1556141638993050681}
   - component: {fileID: 5540098154706387454}
   - component: {fileID: 2402817064577393011}
+  - component: {fileID: 6252573574839021961}
   m_Layer: 0
   m_Name: TICKING+TIME+BOMB+V001
   m_TagString: Untagged
@@ -239,23 +239,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1556141638993050683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556141638993050682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76bc57fd0d28c44bb8c389411f3cc95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showDebug: 0
-  tweenAnimations:
-  - {fileID: 5540098154706387454}
-  - {fileID: 1556141638993050681}
-  ID: 0
 --- !u!65 &1556141638993050687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -604,6 +587,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 7515332185729619602}
+--- !u!114 &6252573574839021961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556141638993050682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e32980eb9842968bc72ebe93aad492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenAnimations:
+  - {fileID: 1556141638993050681}
+  ID: 0
 --- !u!1 &1861407607319606325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,28 +2646,23 @@ PrefabInstance:
       propertyPath: m_VertexStreams.Array.data[2]
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3,
-        type: 3}
+    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3,
-        type: 3}
+    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_UseCustomVertexStreams
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3,
-        type: 3}
+    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_VertexStreams.Array.size
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3,
-        type: 3}
+    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_VertexStreams.Array.data[1]
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3,
-        type: 3}
+    - target: {fileID: 199479367386540494, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
       propertyPath: m_VertexStreams.Array.data[2]
       value: 4
       objectReference: {fileID: 0}
@@ -2678,13 +2671,11 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
 --- !u!1 &1272528585018754412 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 180702, guid: a7c694f0877ea874fa57e033221095c3,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 180702, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
   m_PrefabInstance: {fileID: 1272528585018574002}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1272528585018976946 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 404992, guid: a7c694f0877ea874fa57e033221095c3,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 404992, guid: a7c694f0877ea874fa57e033221095c3, type: 3}
   m_PrefabInstance: {fileID: 1272528585018574002}
   m_PrefabAsset: {fileID: 0}

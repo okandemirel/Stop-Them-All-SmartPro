@@ -32,6 +32,7 @@ namespace Utility
             UIManager.Instance.onSetLevelValueToText += OnSetLevelValueToText;
             UIManager.Instance.onSetLevelEnemyCountToBar += OnSetLevelEnemyCountToBar;
             UIManager.Instance.onSetKilledEnemyCountToUI += OnSetKilledEnemyCountToUI;
+            UIManager.Instance.onResetFillBar += OnResetFillBar;
         }
 
         private void OnDisable()
@@ -41,6 +42,7 @@ namespace Utility
             UIManager.Instance.onSetLevelValueToText -= OnSetLevelValueToText;
             UIManager.Instance.onSetLevelEnemyCountToBar -= OnSetLevelEnemyCountToBar;
             UIManager.Instance.onSetKilledEnemyCountToUI -= OnSetKilledEnemyCountToUI;
+            UIManager.Instance.onResetFillBar -= OnResetFillBar;
         }
 
         private void OnActivateTopBar()
@@ -69,6 +71,11 @@ namespace Utility
         {
             fillabledImage.DOFillAmount((float) killedEnemyCount / _levelEnemyCount, .5f);
             enemyCountLeft.text = killedEnemyCount.ToString();
+        }
+
+        private void OnResetFillBar()
+        {
+            fillabledImage.fillAmount = 0;
         }
     }
 }

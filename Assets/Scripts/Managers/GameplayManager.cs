@@ -45,6 +45,8 @@ namespace Managers
         private void Start()
         {
             EventManager.Instance.onPlay += OnPlay;
+            EventManager.Instance.onLevelSuccess += Reset;
+            EventManager.Instance.onLevelFailed += Reset;
 
             EventManager.Instance.onIncreaseKilledEnemyCount += OnIncreaseKilledEnemyCount;
 
@@ -54,6 +56,8 @@ namespace Managers
         private void OnDisable()
         {
             EventManager.Instance.onPlay -= OnPlay;
+            EventManager.Instance.onLevelSuccess -= Reset;
+            EventManager.Instance.onLevelFailed -= Reset;
 
             EventManager.Instance.onIncreaseKilledEnemyCount -= OnIncreaseKilledEnemyCount;
         }
@@ -67,7 +71,7 @@ namespace Managers
         private void OnPlay()
         {
             EventManager.Instance.onActivateEnemyMovement?.Invoke();
-            EventManager.Instance.onSetCinemachineTarget?.Invoke(); //Çalışmıyor
+            EventManager.Instance.onSetCinemachineTarget?.Invoke();
             EventManager.Instance.onActivateBoobyTrapActivatorButton?.Invoke();
             //Başka şeyler de eklenebilir
         }
@@ -80,6 +84,12 @@ namespace Managers
             {
                 DOVirtual.DelayedCall(1, () => EventManager.Instance.onLevelSuccess?.Invoke());
             }
+        }
+
+        private void Reset()
+        {
+            StageID = 0;
+            killedEnemyCount = 0;
         }
     }
 }

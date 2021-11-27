@@ -27,7 +27,7 @@ namespace Utility
         private void Start()
         {
             enemyManager = GetComponent<EnemyManager>();
-            
+
             enemyManager.onActivateEnemyMovementRigidbody += OnActivateEnemyMovementRigidbody;
             enemyManager.onDeactivateEnemyMovementRigidbody += OnDeactivateEnemyMovementRigidbody;
 
@@ -90,6 +90,7 @@ namespace Utility
 
             if (other.CompareTag("Obstacle"))
             {
+                collider.enabled = false;
                 enemyManager.onKillEnemy?.Invoke();
                 EventManager.Instance.onIncreaseKilledEnemyCount?.Invoke();
             }

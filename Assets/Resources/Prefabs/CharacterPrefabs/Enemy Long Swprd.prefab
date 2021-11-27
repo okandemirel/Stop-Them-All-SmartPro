@@ -49,7 +49,7 @@ Animator:
   m_GameObject: {fileID: 72773622777642584}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 08888dbcb6b0e1048b7e1b2f89ca0f64, type: 3}
-  m_Controller: {fileID: 22100000, guid: 680602008070a39469c6f1dc6b18243e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 825e759c709e2c245bf903b5be0e66e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 919132148577085426}
+  enemyManager: {fileID: 0}
 --- !u!114 &5200506840452826500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +130,7 @@ MonoBehaviour:
   collider: {fileID: 4097461555417503644}
   rigidbody: {fileID: 6896381461279951993}
   speedForward: 0
+  enemyManager: {fileID: 0}
 --- !u!114 &447202579778856009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skinnedMeshRenderer: {fileID: 2794413339285481076}
   deadMaterial: {fileID: 2100000, guid: a19f3c9548e7001419e4ab86b03a7974, type: 2}
+  enemyManager: {fileID: 0}
 --- !u!1 &200096222160887043
 GameObject:
   m_ObjectHideFlags: 0

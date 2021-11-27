@@ -1,4 +1,5 @@
-﻿using Managers;
+﻿using DG.Tweening;
+using Managers;
 using UnityEngine;
 
 namespace Utility
@@ -8,6 +9,8 @@ namespace Utility
         public void OnActivateBoobyTrap()
         {
             EventManager.Instance.onActivateBoobyTrap?.Invoke(GameplayManager.Instance.StageID);
+            GameplayManager.Instance.StageID++;
+            DOVirtual.DelayedCall(1, () => EventManager.Instance.onSetCinemachineTarget?.Invoke());
         }
     }
 }

@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 2031664551762870444}
   - component: {fileID: 367311948455171434}
   - component: {fileID: 3358216940159875976}
+  - component: {fileID: 8432843082872695765}
   m_Layer: 0
   m_Name: OpeningRoad
   m_TagString: Untagged
@@ -664,3 +665,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftRoadObject: {fileID: 6452144903463323588}
   rightRoadObject: {fileID: 7748565285852298638}
+--- !u!114 &8432843082872695765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9176690616573370204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e32980eb9842968bc72ebe93aad492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenAnimations:
+  - {fileID: 367311948455171434}
+  ID: 0

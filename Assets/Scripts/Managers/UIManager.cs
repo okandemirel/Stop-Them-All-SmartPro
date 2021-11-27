@@ -38,6 +38,7 @@ public class UIManager : MonoBehaviour
     public UnityAction onDeactivateStartPanel = delegate { };
 
     public UnityAction<int> onSetKilledEnemyCountToUI = delegate { };
+    public UnityAction onResetFillBar = delegate { };
 
     #endregion
 
@@ -116,6 +117,7 @@ public class UIManager : MonoBehaviour
         onDeactivateStartPanel?.Invoke();
         onDeactivateBoobyTrapPanel?.Invoke();
         onActivateLevelFailedPanel?.Invoke();
+        onResetFillBar?.Invoke();
     }
 
     private void LevelSuccess()
@@ -124,12 +126,14 @@ public class UIManager : MonoBehaviour
         onDeactivateStartPanel?.Invoke();
         onDeactivateBoobyTrapPanel?.Invoke();
         onActivateLevelSuccessPanel?.Invoke();
+        onResetFillBar?.Invoke();
     }
 
     public void OnNextLevel()
     {
         onDeactivateLevelFailedPanel?.Invoke();
         onDeactivateLevelSuccessPanel?.Invoke();
+        onActivateStartPanel?.Invoke();
         EventManager.Instance.onNextLevel?.Invoke();
     }
 
@@ -137,6 +141,7 @@ public class UIManager : MonoBehaviour
     {
         onDeactivateLevelFailedPanel?.Invoke();
         onDeactivateLevelSuccessPanel?.Invoke();
+        onActivateStartPanel?.Invoke();
         EventManager.Instance.onRestartLevel?.Invoke();
     }
 }
